@@ -8,3 +8,8 @@ On the left hand side under the list of themes, click "..." button;
 Click Import...;
 Select the Dracula.terminal file;
 Click Default. 
+
+## Ansible Playbook
+```
+ansible-playbook -i ./inventories/inventory.txt test-p10k-config.yaml
+```
