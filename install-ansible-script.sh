@@ -4,5 +4,5 @@
 # sudo dnf install -y ansible
 # sudo dnf install -y ansible-core
 
-brew install -y ansible
+brew install ansible
 ansible --version

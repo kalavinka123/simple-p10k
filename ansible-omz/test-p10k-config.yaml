@@ -1,19 +1,22 @@
 ---
 - name: Config p10k
   hosts: localhost
+
   tasks:
-    - name: Install Powerlevel10k
-      git: "https://github.com/romkatv/powerlevel10k.git"
+  - name: Install Powerlevel10k
+    git: 
+      repo: "https://github.com/romkatv/powerlevel10k.git"
       dest: "~/powerlevel10k"
       depth: "1"
       update: no
       version: "master"
 
-    - name: Configure zsh
-      lineinfile:
-        path: ~/.zshrc
-        line: "source ~/powerlevel10k/powerlevel10k.zsh-theme"
-    
-    - name: Install Dracula theme
-      git: "https://github.com/dracula/terminal-app.git"
+  - name: Configure zsh
+    lineinfile:
+      path: ~/.zshrc
+      line: "source ~/powerlevel10k/powerlevel10k.zsh-theme"
+  
+  - name: Install Dracula theme
+    git: 
+      repo: "https://github.com/dracula/terminal-app.git"
       dest: "~/dracula-theme"

@@ -11,5 +11,6 @@ Click Default.
 
 ## Ansible Playbook
 ```
+cd ansible-omz
 ansible-playbook -i ./inventories/inventory.txt test-p10k-config.yaml
 ```
